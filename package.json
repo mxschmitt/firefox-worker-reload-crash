@@ -1,0 +1,14 @@
+{
+  "name": "firefox-worker-reload-crash",
+  "private": true,
+  "type": "module",
+  "description": "Minimal repro: Firefox content process SIGSEGV when reloading while a Web Worker script is still compiling",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "playwright test",
+    "loop": "node repro.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}
