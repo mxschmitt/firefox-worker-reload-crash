@@ -7,9 +7,11 @@ Reproduces with Playwright's bundled Firefox **153.0** (`firefox-1538`, shipped 
 1.62.0) and still reproduces on **`@playwright/test@next`** (Firefox 155.0), on both **Linux x64
 and macOS arm64**. Does not reproduce on any earlier Playwright Firefox build we tested.
 
+Filed as **[microsoft/playwright#42565](https://github.com/microsoft/playwright/issues/42565)**.
+
 Upstream Firefox bug: **[Bugzilla 2044428](https://bugzilla.mozilla.org/show_bug.cgi?id=2044428)**
 (`Crash in [@ mozilla::dom::workerinternals::loader::WorkerScriptLoader::EvaluateScript]`, open).
-Earlier Playwright report: [microsoft/playwright#42555](https://github.com/microsoft/playwright/issues/42555)
+Supersedes [microsoft/playwright#42555](https://github.com/microsoft/playwright/issues/42555)
 (closed as not planned — it was a draft with no attached repro; this repo is that missing repro).
 
 ## Run it
